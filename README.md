@@ -1,9 +1,10 @@
 # go-vim-dev-config
-plug install
+## plug install
 :PlugInstall 
-config gopls
+## config gopls
 :CocConfig
-`{
+```
+{
   "languageserver": {
     "go": {
       "command": "gopls",
@@ -12,7 +13,8 @@ config gopls
       "filetypes": ["go"]
     }   
   }
-}`
+}
+```
 
-support javascript autocompletion
+## support javascript autocompletion
 :CocInstall coc-tsserver coc-json
