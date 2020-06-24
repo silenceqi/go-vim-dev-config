@@ -38,6 +38,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 "Plug 'roxma/nvim-yarp'
 "Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-commentary'
 call plug#end()
 "let g:deoplete#enable_at_startup = 1
 "set completeopt+=noselect
@@ -48,3 +49,5 @@ let g:go_highlight_build_constraints = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_function_calls = 1
+
+map <c-m> :Commentary<cr>
